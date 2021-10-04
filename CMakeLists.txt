@@ -20,6 +20,12 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_DEBUG_POSTFIX d)
 
+# -------------------------
+# REZ (CentOs7 issue of building with multiple jobs)
+set(AUTOGEN_PARALLEL "1")
+set(CMAKE_AUTOGEN_PARALLEL "1")
+# -------------------------
+
 set(QUAZIP_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 set(QUAZIP_BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR})
 set(QUAZIP_LIB_FILE_NAME quazip${QuaZip_VERSION_MAJOR}-qt${QUAZIP_QT_MAJOR_VERSION})
